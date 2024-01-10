@@ -12,11 +12,9 @@ repositories {
 dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
-    ktor_version=2.3.7
-    dependencies {
-        implementation("io.ktor:ktor-client-core:$ktor_version")
-        implementation("io.ktor:ktor-client-cio:$ktor_version")
-    }
+    val ktorVersion="2.3.7"
+    implementation("io.ktor:ktor-client-core:$ktorVersion")
+    implementation("io.ktor:ktor-client-cio:$ktorVersion")
 }
 
 tasks.test {
